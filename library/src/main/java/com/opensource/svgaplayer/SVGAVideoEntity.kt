@@ -42,7 +42,7 @@ class SVGAVideoEntity {
     internal var sprites: List<SVGAVideoSpriteEntity> = listOf()
     internal var audios: List<SVGAAudioEntity> = listOf()
     internal var soundPool: SoundPool? = null
-    internal var images = HashMap<String, Bitmap>()
+    var images = HashMap<String, Bitmap>()
     private var cacheDir: File
 
     constructor(obj: JSONObject, cacheDir: File) {
